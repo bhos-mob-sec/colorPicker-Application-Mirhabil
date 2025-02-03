@@ -42,53 +42,61 @@
         app:layout_constraintStart_toStartOf="@+id/view2"
         app:layout_constraintTop_toBottomOf="@+id/view2"
         app:thumbColor="#B1A8A8"
+        app:thumbHeight="25dp"
         app:tickColorActive="#8A8181"
-        app:trackColor="#B1A8A8" />
+        app:trackColor="#B1A8A8"
+        app:trackHeight="10dp" />
 
     <com.google.android.material.slider.Slider
-        android:stepSize="1"
-        android:value="127"
-        android:valueFrom="0"
-        android:valueTo="255"
-        app:thumbColor="#FFFF0000"
-        app:trackColor="#FFFF0000"
         android:id="@+id/slider2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="@+id/slider1"
-        app:layout_constraintStart_toStartOf="@id/slider1"
-        app:layout_constraintTop_toBottomOf="@id/slider1" />
-
-    <com.google.android.material.slider.Slider
+        android:stepSize="1"
         android:value="127"
         android:valueFrom="0"
         android:valueTo="255"
-        android:stepSize="1"
-        app:thumbColor="#FF00FF00"
-        app:trackColor="#FF00FF00"
+        app:layout_constraintEnd_toEndOf="@+id/slider1"
+        app:layout_constraintStart_toStartOf="@id/slider1"
+        app:layout_constraintTop_toBottomOf="@id/slider1"
+        app:thumbColor="#FFFF0000"
+        app:thumbHeight="25dp"
+        app:trackColor="#FFFF0000"
+        app:trackHeight="10dp" />
+
+    <com.google.android.material.slider.Slider
         android:id="@+id/slider3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="@id/slider2"
-        app:layout_constraintStart_toStartOf="@id/slider2"
-        app:layout_constraintTop_toBottomOf="@id/slider2" />
-
-    <com.google.android.material.slider.Slider
         android:stepSize="1"
         android:value="127"
         android:valueFrom="0"
         android:valueTo="255"
-        app:thumbColor="#FF0000FF"
-        app:trackColor="#FF0000FF"
+        app:layout_constraintEnd_toEndOf="@id/slider2"
+        app:layout_constraintStart_toStartOf="@id/slider2"
+        app:layout_constraintTop_toBottomOf="@id/slider2"
+        app:thumbColor="#FF00FF00"
+        app:thumbHeight="25dp"
+        app:trackColor="#FF00FF00"
+        app:trackHeight="10dp" />
+
+    <com.google.android.material.slider.Slider
         android:id="@+id/slider4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:stepSize="1"
+        android:value="127"
+        android:valueFrom="0"
+        android:valueTo="255"
         app:layout_constraintEnd_toEndOf="@id/slider3"
         app:layout_constraintStart_toStartOf="@id/slider3"
-        app:layout_constraintTop_toBottomOf="@id/slider3" />
+        app:layout_constraintTop_toBottomOf="@id/slider3"
+        app:thumbColor="#FF0000FF"
+        app:thumbHeight="25dp"
+        app:trackColor="#FF0000FF"
+        app:trackHeight="10dp" />
 
     <EditText
         android:id="@+id/editTextText"
