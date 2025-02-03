@@ -1,5 +1,6 @@
 package com.example.classtask3xml
 
+import android.graphics.Color
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -47,6 +48,9 @@ class MainActivity : AppCompatActivity() {
                         Log.e("HexToRGBA", "Invalid color format", e)
                     }
 
+                }
+                else{
+                    binding.view.setBackgroundColor(Color.BLACK)
                 }
             }
         })
